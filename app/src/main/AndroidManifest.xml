@@ -27,6 +27,13 @@
             android:name="xposedminversion"
             android:value="53" />
 
+        <!-- https://github.com/Henry-ZHR/KillDomainVerification/blob/master/app/src/main/AndroidManifest.xml -->
+        <!-- https://github.com/Henry-ZHR/KillDomainVerification/blob/master/app/src/main/res/values/arrays.xml -->
+
+        <meta-data
+            android:name="xposedscope"
+            android:value="android" />
+
     </application>
 
 </manifest>
