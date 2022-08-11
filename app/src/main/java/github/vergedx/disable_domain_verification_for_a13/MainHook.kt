@@ -1,3 +1,0 @@
-package github.vergedx.disable_domain_verification_for_a13
-
-class MainHook
