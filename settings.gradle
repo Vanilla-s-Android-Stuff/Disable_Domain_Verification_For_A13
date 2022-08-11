@@ -10,6 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        // https://github.com/Henry-ZHR/KillDomainVerification/blob/master/settings.gradle
+        maven { url 'https://api.xposed.info/' }
     }
 }
 rootProject.name = "Disable_Domain_Verification_For_A13"
