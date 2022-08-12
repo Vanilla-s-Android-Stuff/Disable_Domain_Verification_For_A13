@@ -12,6 +12,8 @@ public class MainHook implements IXposedHookLoadPackage { // TODO: Refactor by u
 
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) {
+        if (!lpparam.packageName.equals("android")) return;
+
         // https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags
         XposedHelpers.findAndHookMethod("com.android.server.pm.verify.domain.DomainVerificationUtils",
                 lpparam.classLoader, "isDomainVerificationIntent", Intent.class, long.class,
